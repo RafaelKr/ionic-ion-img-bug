@@ -1,0 +1,10 @@
+<ion-skeleton-text
+	*ngIf="showLoading"
+	[animated]="animated"
+></ion-skeleton-text>
+
+<ion-img
+	[src]="src"
+	[alt]="alt"
+	(ionImgDidLoad)="showLoading = false"
+></ion-img>

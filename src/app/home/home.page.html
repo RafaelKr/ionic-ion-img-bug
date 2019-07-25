@@ -10,7 +10,10 @@
 	<ion-list>
 		<ion-item *ngFor="let item of items">
 			<ion-thumbnail slot="start">
-				<ion-img [src]="item.img?.src"></ion-img>
+				<app-loading-img
+					[src]="item.img?.src"
+					[ratio]="1"
+				></app-loading-img>
 			</ion-thumbnail>
 
 			<ion-label>{{ item.label }}</ion-label>

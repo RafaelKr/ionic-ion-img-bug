@@ -6,12 +6,15 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+import { LoadingImgComponentModule } from '../components/loading-img/loading-img.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    LoadingImgComponentModule,
     RouterModule.forChild([
       {
         path: '',
